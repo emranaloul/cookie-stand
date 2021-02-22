@@ -8,16 +8,18 @@ const Seattle = {
     maxCust: 65,
     cookiesSales: [], 
     average: 6.3,
+    total: 0,
     getCookiesSales: function(minCust, maxCust){
         for (let index = 0; index < (workingHours.length - 1); index++) {
   
             this.cookiesSales.push(parseInt(generateRandomNumber(this.minCust, this.maxCust) * this.average)) ;
+            this.total = this.total + this.cookiesSales[index];
+            
         }
-        
-        
-        let total = this.cookiesSales[0] + this.cookiesSales[1] + this.cookiesSales[2] +this.cookiesSales[3] +this.cookiesSales[4] +this.cookiesSales[5] +this.cookiesSales[6] +this.cookiesSales[7] +this.cookiesSales[8] +this.cookiesSales[9] +this.cookiesSales[10] +this.cookiesSales[11] +this.cookiesSales[12] +this.cookiesSales[13]; 
-        this.cookiesSales.push(total);
+        this.cookiesSales.push(this.total);
 
+        console.log(this.total);
+        
     },
     
     render: function() {
