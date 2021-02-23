@@ -86,8 +86,6 @@ function tableFooter(){
 
 
 
-
-
 const Seattle = new City('Seatle', 23 , 65 , [], 6.3);
 const Tokyo = new City('Tokyo', 3 , 24 ,[], 1.2);
 const Dubai = new City('Dubai', 11, 38, [], 3.7);
