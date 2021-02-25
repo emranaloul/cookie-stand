@@ -174,7 +174,3 @@ console.log(thElement);
 tableFooter();
 
 
-
-  
-
-
